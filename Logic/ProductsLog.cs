@@ -18,5 +18,9 @@ namespace Logic
         {
             return objPro.saveProducts( _code,  _description,  _quantity,  _price,  _fkCategory,  _fkProvider);
         }
+        public bool updateProducts(int _id, string _code, string _description, int _quantity, double _price, int _fkCategory, int _fkProvider)
+        {
+            return objPro.updateProducts(_id, _code, _description, _quantity, _price, _fkCategory, _fkProvider);
+        }
     }
 }
