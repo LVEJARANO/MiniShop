@@ -85,3 +85,4 @@ C:\Users\Usuario\source\repos\MiniTienda\Presentation\obj\Debug\Presentation.csp
 C:\Users\Usuario\source\repos\MiniTienda\Presentation\obj\Debug\Presentation.csproj.CopyComplete
 C:\Users\Usuario\source\repos\MiniTienda\Presentation\obj\Debug\Presentation.dll
 C:\Users\Usuario\source\repos\MiniTienda\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Usuario\source\repos\MiniTienda\Presentation\bin\SimpleCrypto.dll
