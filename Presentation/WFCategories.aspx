@@ -16,7 +16,8 @@
             <asp:Button ID="BtnSave" runat="server" Text="Guardar" OnClick="BtnSave_Click" />
             <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar" OnClick="BtnUpdate_Click" /><br />
             <asp:Label ID="LblMsj" runat="server" Text=""></asp:Label><br />
-            <asp:GridView ID="GVCategory" runat="server" OnSelectedIndexChanged="GVCategory_SelectedIndexChanged" DataKeyNames="cat_id" OnRowDeleting="GVCategory_RowDeleting">
+            <asp:GridView ID="GVCategory" runat="server" OnSelectedIndexChanged="GVCategory_SelectedIndexChanged"
+                DataKeyNames="cat_id" OnRowDeleting="GVCategory_RowDeleting">
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
                     <asp:CommandField ShowDeleteButton="True" />

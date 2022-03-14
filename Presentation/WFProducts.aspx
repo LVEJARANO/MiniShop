@@ -27,9 +27,9 @@
             <asp:Button ID="BtnSave" runat="server" Text="Guardar" OnClick="BtnSave_Click"/>
             <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar" OnClick="BtnUpdate_Click" /><br />
             <asp:Label ID="LblMsj" runat="server" Text=""></asp:Label><br />
-            <asp:GridView ID="GVProducts" runat="server" OnRowDataBound="GVProducts_RowDataBound" OnSelectedIndexChanged="GVProducts_SelectedIndexChanged" AutoGenerateColumns="False">
+            <asp:GridView ID="GVProducts" runat="server" OnRowDataBound="GVProducts_RowDataBound" 
+                OnSelectedIndexChanged="GVProducts_SelectedIndexChanged" AutoGenerateColumns="False">
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="pro_id" HeaderText="id" />
                     <asp:BoundField DataField="pro_codigo" HeaderText="Codigo" />
                     <asp:BoundField DataField="pro_descripcion" HeaderText="Nombre" />
@@ -39,6 +39,7 @@
                     <asp:BoundField DataField="cat_descripcion" HeaderText="Categoria" />
                     <asp:BoundField DataField="tbl_proveedores_prov_id" HeaderText="fkProveedor" />
                     <asp:BoundField DataField="prov_nombre" HeaderText="Proveedor" />
+                    <asp:CommandField ShowSelectButton="True" />
                 </Columns>
             </asp:GridView>
         </div>

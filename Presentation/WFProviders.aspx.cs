@@ -19,7 +19,7 @@ namespace Presentation
         {
             if (!Page.IsPostBack)
             {
-                //showProviders();
+                showProviders();
             }
         }
         private void showProviders()

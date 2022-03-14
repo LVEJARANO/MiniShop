@@ -23,7 +23,8 @@
             <asp:Button ID="BtnSave" runat="server" Text="Guardar" OnClick="BtnSave_Click" />
             <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar" OnClick="BtnUpdate_Click" /><br />
             <asp:Label ID="LblMsj" runat="server" Text=""></asp:Label><br />
-            <asp:GridView ID="GVUsers" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GVUsers_SelectedIndexChanged">
+            <asp:GridView ID="GVUsers" runat="server" AutoGenerateColumns="False" 
+                OnSelectedIndexChanged="GVUsers_SelectedIndexChanged">
                 <Columns>
                     <asp:BoundField DataField="usu_id" HeaderText="Id"/>
                     <asp:BoundField DataField="usu_correo" HeaderText="Correo"/>

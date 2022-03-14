@@ -19,7 +19,7 @@ namespace Presentation
         {
             if (!Page.IsPostBack)
             {
-                // showCategories();
+                showCategories();
             }
 
         }

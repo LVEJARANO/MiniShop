@@ -58,7 +58,6 @@ namespace Data
             }
             objPer.closeConnection();
             return executed;
-
         }
 
         //Metodo para actulizar un producto
@@ -93,7 +92,6 @@ namespace Data
             }
             objPer.closeConnection();
             return executed;
-
         }
 
     }
