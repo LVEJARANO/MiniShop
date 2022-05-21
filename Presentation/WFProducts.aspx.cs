@@ -23,6 +23,7 @@ namespace Presentation
         {
             if (!Page.IsPostBack)
             {
+                TBId.Visible = false;//Se oculta el Id
                 showProducts();
                 showCategoriesDDL();
                 showProvidersDDL();
@@ -46,20 +47,20 @@ namespace Presentation
             DDLCategories.Items.Insert(0, "Seleccione");
 
         }
-        //Evento que permite ocultar una columna de la GridView
+        //Evento que permite ocultar columnas de la GridView
         protected void GVProducts_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
             {
-                e.Row.Cells[1].Visible = false;
-                e.Row.Cells[6].Visible = false;
-                e.Row.Cells[8].Visible = false;
+                e.Row.Cells[0].Visible = false;//Oculta la cabecera del id
+                e.Row.Cells[5].Visible = false;//Oculta la cabecera del fkCategories
+                e.Row.Cells[7].Visible = false;//Oculta la cabecera del fkProviders
             }
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
-                e.Row.Cells[1].Visible = false;
-                e.Row.Cells[6].Visible = false;
-                e.Row.Cells[8].Visible = false;
+                e.Row.Cells[0].Visible = false;//Oculta la fila del id
+                e.Row.Cells[5].Visible = false;//Oculta la fila del fkCategories
+                e.Row.Cells[7].Visible = false;//Oculta la fila del fkProviders
             }
         }
 
@@ -117,13 +118,13 @@ namespace Presentation
         }
         protected void GVProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TBId.Text = GVProducts.SelectedRow.Cells[1].Text;
-            TBCode.Text = GVProducts.SelectedRow.Cells[2].Text;
-            TBDescription.Text = GVProducts.SelectedRow.Cells[3].Text;
-            TBQuantity.Text = GVProducts.SelectedRow.Cells[4].Text;
-            TBPrice.Text = GVProducts.SelectedRow.Cells[5].Text;
-            DDLCategories.SelectedValue = GVProducts.SelectedRow.Cells[6].Text;
-            DDLProviders.SelectedValue = GVProducts.SelectedRow.Cells[8].Text;
+            TBId.Text = GVProducts.SelectedRow.Cells[0].Text;
+            TBCode.Text = GVProducts.SelectedRow.Cells[1].Text;
+            TBDescription.Text = GVProducts.SelectedRow.Cells[2].Text;
+            TBQuantity.Text = GVProducts.SelectedRow.Cells[3].Text;
+            TBPrice.Text = GVProducts.SelectedRow.Cells[4].Text;
+            DDLCategories.SelectedValue = GVProducts.SelectedRow.Cells[5].Text;
+            DDLProviders.SelectedValue = GVProducts.SelectedRow.Cells[7].Text;
         }
     }
 }

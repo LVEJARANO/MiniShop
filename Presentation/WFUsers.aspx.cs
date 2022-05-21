@@ -22,6 +22,7 @@ namespace Presentation
         {
             if (!Page.IsPostBack)
             {
+                LblId.Visible = false;//Se oculta el Id
                 showUsers();
             }
         }

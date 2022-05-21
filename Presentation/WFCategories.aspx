@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <main>
             <section>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">MiniShop</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
